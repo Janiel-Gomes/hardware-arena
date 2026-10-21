@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "functions": {"api/[action].js": {"includeFiles": "lib/**", "maxDuration": 30}},
+  "headers": [{"source":"/api/(.*)","headers":[{"key":"Cache-Control","value":"no-store"}]}]
+}
