@@ -1,0 +1,7 @@
+import http from 'node:http';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import worker from './worker/index.js';
+const root=path.resolve('.arena-data');await fs.mkdir(root,{recursive:true});
+const BUCKET={async get(key){try{const data=await fs.readFile(path.join(root,encodeURIComponent(key)), 'utf8');return{json:async()=>JSON.parse(data)}}catch(e){if(e.code==='ENOENT')return null;throw e}},async put(key,data){const file=path.join(root,encodeURIComponent(key));const temp=file+'.'+crypto.randomUUID()+'.tmp';await fs.writeFile(temp,data);await fs.rename(temp,file)},async list({prefix,limit=1000}){return{objects:(await fs.readdir(root)).filter(x=>!x.endsWith('.tmp')).map(x=>decodeURIComponent(x)).filter(x=>x.startsWith(prefix)).slice(0,limit).map(key=>({key}))}}};
+const port=Number(process.env.PORT||3000);http.createServer(async(req,res)=>{try{let body='';for await(const chunk of req){body+=chunk;if(body.length>10000){res.writeHead(413);res.end();return}}const request=new Request('http://localhost:'+port+req.url,{method:req.method,headers:req.headers,...(body?{body}: {})});const response=await worker.fetch(request,{BUCKET});res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()))}catch(e){res.writeHead(500);res.end('Erro interno.')}}).listen(port,'0.0.0.0',()=>console.log('Hardware Arena: http://localhost:'+port+'\nPara celulares na mesma rede: use o IP deste computador e a porta '+port));

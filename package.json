@@ -1,0 +1,9 @@
+{
+  "name": "hardware-arena",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/assemble.mjs && node server.mjs",
+    "build": "bash scripts/build.sh"
+  }
+}
