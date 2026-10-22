@@ -76,3 +76,16 @@ As 24 ordens possíveis podem coincidir entre alunos; o sorteio é independente,
 Para instalar: substitua os arquivos deste ZIP no mesmo repositório, preservando as variáveis Redis na Vercel. Use Framework Other, Build npm run build e Output public. Aguarde um NOVO deploy do commit atualizado; redeploy de commit antigo não incorpora as mudanças. Não reintroduza server.mjs nem scripts/build.sh. A raiz do repositório deve conter api/, lib/, public/, scripts/, package.json e vercel.json.
 
 Cinco testes passaram, incluindo ordem individual, estabilidade ao recarregar, acertos e erros após embaralhar, destaque da resposta e cinco rodadas sem repetir questões. A atualização não foi publicada na sua conta Vercel por este ambiente; exige o envio ao repositório e um novo deploy. Os testes do banco usam um Redis simulado.
+
+## Atualização 2.3 — escolha da disciplina
+
+Ao criar a partida, selecione uma disciplina antes de criar a sala:
+- Arquitetura e Manutenção de Computadores: 100 questões (questions.json).
+- HTML/CSS: 40 questões (questions_html_css.json).
+- Lógica de Programação e Python: 40 questões (questions_logica_python.json).
+
+Cada sala guarda sua disciplina e as novas rodadas continuam no mesmo banco. Para mudar de disciplina, crie outra sala. Rodadas de 20 permitem cinco rodadas de Arquitetura ou duas das demais sem repetir perguntas. A disciplina também pode ser escolhida em Treinar sozinho. As alternativas embaralhadas por aluno continuam ativas em salas novas.
+
+Envie TODOS os arquivos desta versão ao repositório, em especial os dois novos bancos JSON, scripts/build.mjs, lib/game.js, lib/engine.js e public/index.html. Preserve as variáveis Redis. Aguarde o deploy do NOVO commit. Não use um build.mjs de um ZIP anterior: esta versão combina os três bancos durante o build.
+
+O build e seis testes automatizados passaram. Incluem isolamento dos bancos por sala, continuidade da disciplina nas rodadas, 40 perguntas sem repetição em duas rodadas e rejeição de disciplinas inválidas. Não foi realizado deploy na sua conta Vercel nem teste com Redis real nesta atualização.

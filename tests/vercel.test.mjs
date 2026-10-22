@@ -29,3 +29,18 @@ test('Individual option permutations stay stable and map answers and reveals cor
  const teacher=await api('state',host);assert.deepEqual(teacher.question.options,original[1]);assert.equal(teacher.question.correct,original[2]);
  assert.equal((await api('state',{code:room.code})).status,403);
 });
+test('Subject selection restricts each room and later rounds to its own bank',async()=>{
+ const banks={html_css:JSON.parse(fs.readFileSync('questions_html_css.json')),logica_python:JSON.parse(fs.readFileSync('questions_logica_python.json'))};
+ for(const [subject,bank] of Object.entries(banks)){
+  assert.equal(bank.length,40);assert.equal(new Set(bank.map(q=>q[0])).size,40);
+  const allowed=new Set(bank.map(q=>q[0]));const room=await api('create',{subject,count:20,seconds:30});assert.equal(room.subject,subject);const host={code:room.code,host:room.host};const seen=new Set();
+  for(let round=0;round<2;round++){
+   for(let i=0;i<20;i++){await api('advance',host);const state=await api('state',host);assert.equal(state.subject,subject);assert.ok(allowed.has(state.question.text));assert.ok(!seen.has(state.question.text));seen.add(state.question.text);await api('advance',host)}
+   await api('advance',host);assert.equal((await api('state',host)).phase,'done');await api('restart',host)
+  }
+  assert.equal(seen.size,40);
+  const r=await handle(new Request('https://test/api/questions?subject='+subject),{},transport);assert.deepEqual(await r.json(),bank)
+ }
+ assert.equal((await api('create',{subject:'invalida'})).status,400);
+ const r=await handle(new Request('https://test/api/questions?subject=invalida'),{},transport);assert.equal(r.status,400)
+});

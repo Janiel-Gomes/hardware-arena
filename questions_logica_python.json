@@ -1,0 +1,442 @@
+[
+  [
+    "O que é um algoritmo?",
+    [
+      "Uma sequência de passos para resolver um problema",
+      "Somente uma linguagem de programação",
+      "Uma peça do processador",
+      "Um tipo de monitor"
+    ],
+    0,
+    "Um algoritmo organiza passos finitos para realizar uma tarefa."
+  ],
+  [
+    "Qual comando exibe uma mensagem em Python?",
+    [
+      "input()",
+      "print()",
+      "showtext()",
+      "echo_python()"
+    ],
+    1,
+    "Print escreve valores na saída padrão."
+  ],
+  [
+    "Qual função lê uma entrada digitada pelo usuário?",
+    [
+      "print()",
+      "len()",
+      "input()",
+      "range()"
+    ],
+    2,
+    "Input lê uma linha e devolve seu conteúdo como string."
+  ],
+  [
+    "Qual tipo input() retorna normalmente?",
+    [
+      "int",
+      "float",
+      "bool",
+      "string (str)"
+    ],
+    3,
+    "Mesmo números digitados chegam como texto e precisam de conversão quando necessário."
+  ],
+  [
+    "Como converter o texto \"12\" para um inteiro em Python?",
+    [
+      "int(\"12\")",
+      "str(12)",
+      "float_text(\"12\")",
+      "integer = \"12\""
+    ],
+    0,
+    "Int converte uma representação válida de inteiro em um valor int."
+  ],
+  [
+    "Qual símbolo faz atribuição em Python?",
+    [
+      "==",
+      "=",
+      "!=",
+      "<="
+    ],
+    1,
+    "O sinal = atribui um valor a uma variável ou outro destino permitido."
+  ],
+  [
+    "Qual operador testa igualdade?",
+    [
+      "=",
+      "=>",
+      "==",
+      ":= apenas"
+    ],
+    2,
+    "O operador == compara valores quanto à igualdade."
+  ],
+  [
+    "Quanto vale 7 % 3 em Python?",
+    [
+      "2",
+      "3",
+      "0",
+      "1"
+    ],
+    3,
+    "O operador % devolve o resto da divisão; 7 dividido por 3 deixa resto 1."
+  ],
+  [
+    "Quanto vale 7 // 2 em Python?",
+    [
+      "3",
+      "3.5",
+      "4",
+      "1"
+    ],
+    0,
+    "A divisão inteira // arredonda o quociente para baixo."
+  ],
+  [
+    "Qual operador calcula potência em Python?",
+    [
+      "^",
+      "**",
+      "%%",
+      "//"
+    ],
+    1,
+    "O operador ** eleva um valor à potência indicada."
+  ],
+  [
+    "Qual tipo representa True e False?",
+    [
+      "str",
+      "int exclusivamente",
+      "bool",
+      "list"
+    ],
+    2,
+    "Bool representa os valores lógicos True e False."
+  ],
+  [
+    "Para executar um bloco quando uma condição é verdadeira, usa-se:",
+    [
+      "print",
+      "import",
+      "return apenas",
+      "if"
+    ],
+    3,
+    "If inicia uma estrutura de decisão condicional."
+  ],
+  [
+    "Qual palavra define o bloco alternativo de um if?",
+    [
+      "else",
+      "otherwise",
+      "then",
+      "default_if"
+    ],
+    0,
+    "Else é executado quando as condições anteriores da estrutura não são atendidas."
+  ],
+  [
+    "Qual palavra permite testar outra condição após um if?",
+    [
+      "elseif()",
+      "elif",
+      "nextif",
+      "caseif"
+    ],
+    1,
+    "Elif acrescenta um teste condicional à mesma estrutura."
+  ],
+  [
+    "Como Python delimita os blocos de código?",
+    [
+      "Somente com chaves",
+      "Com parênteses no fim de cada linha",
+      "Por indentação",
+      "Com ponto e vírgula obrigatório"
+    ],
+    2,
+    "A indentação faz parte da sintaxe e organiza os blocos."
+  ],
+  [
+    "Qual operador exige que duas condições sejam verdadeiras?",
+    [
+      "or",
+      "not",
+      "!=",
+      "and"
+    ],
+    3,
+    "And produz resultado verdadeiro quando ambas as condições lógicas são verdadeiras."
+  ],
+  [
+    "Qual operador corresponde à alternativa lógica entre condições?",
+    [
+      "or",
+      "and",
+      "not",
+      "//"
+    ],
+    0,
+    "Or permite resultado verdadeiro quando pelo menos uma condição é verdadeira."
+  ],
+  [
+    "O operador not faz o quê?",
+    [
+      "Soma dois números",
+      "Inverte o valor lógico",
+      "Cria uma lista",
+      "Encerra qualquer programa"
+    ],
+    1,
+    "Not nega a condição: verdadeiro vira falso e falso vira verdadeiro."
+  ],
+  [
+    "Qual estrutura repete um bloco enquanto uma condição é verdadeira?",
+    [
+      "if",
+      "elif",
+      "while",
+      "def"
+    ],
+    2,
+    "While reavalia a condição antes de cada execução do bloco."
+  ],
+  [
+    "Uma forma comum de evitar um while infinito é:",
+    [
+      "Apagar a indentação",
+      "Usar apenas print",
+      "Não criar condição",
+      "Atualizar as variáveis que controlam a condição"
+    ],
+    3,
+    "O estado precisa mudar de modo que a condição possa se tornar falsa."
+  ],
+  [
+    "Qual comando encerra o laço mais interno em execução?",
+    [
+      "break",
+      "stop_all",
+      "exit_loop()",
+      "return_loop"
+    ],
+    0,
+    "Break interrompe o laço em que está inserido."
+  ],
+  [
+    "Qual comando pula o restante da iteração e segue para a próxima?",
+    [
+      "break",
+      "continue",
+      "pass_all",
+      "next() sempre"
+    ],
+    1,
+    "Continue transfere o controle para a próxima iteração do laço."
+  ],
+  [
+    "Quais valores são produzidos por range(3)?",
+    [
+      "1, 2, 3",
+      "0, 1, 2, 3",
+      "0, 1, 2",
+      "3, 2, 1"
+    ],
+    2,
+    "Range começa em zero por padrão e não inclui o limite final."
+  ],
+  [
+    "Quais valores são produzidos por range(1, 4)?",
+    [
+      "0, 1, 2, 3",
+      "1, 2, 3, 4",
+      "4 apenas",
+      "1, 2, 3"
+    ],
+    3,
+    "O início é incluído e o limite final é excluído."
+  ],
+  [
+    "Qual estrutura percorre diretamente os elementos de uma lista?",
+    [
+      "for",
+      "if apenas",
+      "def apenas",
+      "try apenas"
+    ],
+    0,
+    "For itera sobre os elementos de um iterável."
+  ],
+  [
+    "Qual escrita cria uma lista em Python?",
+    [
+      "{1;2;3}",
+      "[1, 2, 3]",
+      "(list:1,2,3)",
+      "<1,2,3>"
+    ],
+    1,
+    "Colchetes delimitam uma lista literal."
+  ],
+  [
+    "Qual é o índice do primeiro elemento de uma lista não vazia?",
+    [
+      "1",
+      "-2",
+      "0",
+      "Depende do nome da variável"
+    ],
+    2,
+    "A indexação das listas em Python começa em zero."
+  ],
+  [
+    "Em uma lista não vazia, o índice -1 acessa:",
+    [
+      "O primeiro elemento",
+      "Um elemento aleatório",
+      "Sempre gera erro",
+      "O último elemento"
+    ],
+    3,
+    "Índices negativos contam a partir do final da sequência."
+  ],
+  [
+    "Qual método adiciona um elemento ao final de uma lista?",
+    [
+      "append()",
+      "add_last_only()",
+      "push_list()",
+      "insert_end()"
+    ],
+    0,
+    "Append acrescenta um único objeto ao final da lista."
+  ],
+  [
+    "Qual função devolve a quantidade de elementos de uma lista?",
+    [
+      "size_of()",
+      "len()",
+      "count_all()",
+      "length()"
+    ],
+    1,
+    "Len retorna o comprimento de uma coleção que oferece esse recurso."
+  ],
+  [
+    "Qual palavra inicia a definição de uma função?",
+    [
+      "function",
+      "func",
+      "def",
+      "define()"
+    ],
+    2,
+    "Def introduz o nome, os parâmetros e o bloco de uma função."
+  ],
+  [
+    "Qual comando devolve um resultado de uma função?",
+    [
+      "print sempre",
+      "send",
+      "yield_all",
+      "return"
+    ],
+    3,
+    "Return encerra a chamada da função e devolve o valor indicado."
+  ],
+  [
+    "O que acontece com x após x = 2 e depois x = x + 3?",
+    [
+      "x passa a valer 5",
+      "x continua 2",
+      "x vira texto",
+      "O código é sempre inválido"
+    ],
+    0,
+    "A expressão usa o valor anterior e atribui o resultado à mesma variável."
+  ],
+  [
+    "Quanto vale len(\"Python\")?",
+    [
+      "5",
+      "6",
+      "7",
+      "0"
+    ],
+    1,
+    "A string Python tem seis caracteres."
+  ],
+  [
+    "Qual símbolo inicia um comentário de linha em Python?",
+    [
+      "//",
+      "<!--",
+      "#",
+      "/*"
+    ],
+    2,
+    "O # inicia um comentário até o final da linha, fora de uma string."
+  ],
+  [
+    "O que faz str(25)?",
+    [
+      "Calcula a raiz de 25",
+      "Cria uma lista de 25 itens",
+      "Converte 25 para float",
+      "Converte o valor para texto"
+    ],
+    3,
+    "Str produz uma representação textual do valor."
+  ],
+  [
+    "Qual tipo é adequado para representar 7.5 em Python?",
+    [
+      "float",
+      "bool",
+      "list",
+      "int sem perda"
+    ],
+    0,
+    "Float representa números de ponto flutuante."
+  ],
+  [
+    "Qual exceção pode ocorrer ao executar int(\"abc\")?",
+    [
+      "NameError sempre",
+      "ValueError",
+      "ZeroDivisionError",
+      "Nenhuma, o resultado é zero"
+    ],
+    1,
+    "O texto não representa um inteiro válido para essa conversão."
+  ],
+  [
+    "Qual operador verifica se um elemento está em uma lista?",
+    [
+      "contains_only",
+      "inside",
+      "in",
+      "has() sempre"
+    ],
+    2,
+    "In testa a pertinência do elemento ao recipiente."
+  ],
+  [
+    "Após total = 0 e for n in [2, 3]: total += n, qual é o total final?",
+    [
+      "0",
+      "2",
+      "3",
+      "5"
+    ],
+    3,
+    "O acumulador soma 2 e depois 3, resultando em 5; o comando de soma deve estar no bloco do for."
+  ]
+]

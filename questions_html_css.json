@@ -1,0 +1,442 @@
+[
+  [
+    "Qual é a principal função do HTML?",
+    [
+      "Estruturar o conteúdo de uma página",
+      "Criar bancos de dados",
+      "Substituir o navegador",
+      "Compilar Python"
+    ],
+    0,
+    "HTML descreve a estrutura e o significado do conteúdo."
+  ],
+  [
+    "Qual é a principal função do CSS?",
+    [
+      "Armazenar senhas",
+      "Definir a apresentação visual da página",
+      "Executar consultas SQL",
+      "Criar arquivos ZIP"
+    ],
+    1,
+    "CSS controla aspectos como cores, fontes, espaçamentos e layout."
+  ],
+  [
+    "Qual elemento representa o título principal de uma página?",
+    [
+      "<p>",
+      "<img>",
+      "<h1>",
+      "<br>"
+    ],
+    2,
+    "O h1 identifica um título de nível principal."
+  ],
+  [
+    "Qual elemento cria um parágrafo?",
+    [
+      "<div>",
+      "<head>",
+      "<hr>",
+      "<p>"
+    ],
+    3,
+    "O elemento p marca um parágrafo de texto."
+  ],
+  [
+    "Qual atributo de um link informa seu destino?",
+    [
+      "href",
+      "src",
+      "alt",
+      "class"
+    ],
+    0,
+    "O atributo href do elemento a aponta para o destino do link."
+  ],
+  [
+    "Qual elemento insere uma imagem?",
+    [
+      "<a>",
+      "<img>",
+      "<ul>",
+      "<title>"
+    ],
+    1,
+    "O elemento img usa src para indicar a imagem e alt para sua alternativa textual."
+  ],
+  [
+    "Qual atributo fornece uma alternativa textual para uma imagem?",
+    [
+      "href",
+      "width",
+      "alt",
+      "style"
+    ],
+    2,
+    "O texto alt deve comunicar a função ou o conteúdo relevante da imagem."
+  ],
+  [
+    "Onde fica o conteúdo principal exibido na página HTML?",
+    [
+      "Dentro de <head>",
+      "Dentro de <meta>",
+      "Dentro de <title>",
+      "Dentro de <body>"
+    ],
+    3,
+    "O body reúne o conteúdo da página apresentado ao usuário."
+  ],
+  [
+    "Qual seção contém metadados e referências de estilos?",
+    [
+      "<head>",
+      "<footer>",
+      "<section>",
+      "<article>"
+    ],
+    0,
+    "O head contém informações sobre o documento, como título e estilos vinculados."
+  ],
+  [
+    "Qual elemento define o título exibido na aba do navegador?",
+    [
+      "<h1>",
+      "<title>",
+      "<p>",
+      "<header>"
+    ],
+    1,
+    "O title, no head, define o título do documento."
+  ],
+  [
+    "Qual declaração identifica um documento HTML moderno?",
+    [
+      "<html5>",
+      "<version 5>",
+      "<!DOCTYPE html>",
+      "<doctype css>"
+    ],
+    2,
+    "A declaração DOCTYPE html informa o tipo de documento e ativa o modo padrão."
+  ],
+  [
+    "Qual elemento cria uma lista não ordenada?",
+    [
+      "<ol>",
+      "<li>",
+      "<dl>",
+      "<ul>"
+    ],
+    3,
+    "O ul agrupa itens sem uma ordem numerada."
+  ],
+  [
+    "Qual elemento representa cada item de uma lista ul ou ol?",
+    [
+      "<li>",
+      "<item>",
+      "<list>",
+      "<option>"
+    ],
+    0,
+    "Cada item de uma lista ul ou ol é marcado com li."
+  ],
+  [
+    "Qual elemento cria uma lista ordenada?",
+    [
+      "<ul>",
+      "<ol>",
+      "<nav>",
+      "<tr>"
+    ],
+    1,
+    "O ol representa uma lista em que a ordem dos itens é relevante."
+  ],
+  [
+    "Qual propriedade CSS altera a cor do texto?",
+    [
+      "background-color",
+      "font-style",
+      "color",
+      "text-size"
+    ],
+    2,
+    "A propriedade color define a cor do conteúdo textual."
+  ],
+  [
+    "Qual propriedade CSS define a cor do fundo?",
+    [
+      "text-color",
+      "font-color",
+      "border-width",
+      "background-color"
+    ],
+    3,
+    "background-color define a cor de fundo do elemento."
+  ],
+  [
+    "Qual propriedade altera o tamanho da fonte?",
+    [
+      "font-size",
+      "text-color",
+      "padding",
+      "display"
+    ],
+    0,
+    "font-size determina o tamanho da fonte."
+  ],
+  [
+    "Em CSS, qual seletor seleciona a classe aviso?",
+    [
+      "#aviso",
+      ".aviso",
+      "aviso()",
+      "@aviso"
+    ],
+    1,
+    "O ponto antes do nome identifica um seletor de classe."
+  ],
+  [
+    "Em CSS, qual seletor seleciona o id topo?",
+    [
+      ".topo",
+      "@topo",
+      "#topo",
+      "*topo"
+    ],
+    2,
+    "O símbolo # identifica um seletor de ID."
+  ],
+  [
+    "Qual atributo HTML pode ser compartilhado por vários elementos para aplicar estilos?",
+    [
+      "href",
+      "src",
+      "id único obrigatório",
+      "class"
+    ],
+    3,
+    "A mesma classe pode ser usada em vários elementos."
+  ],
+  [
+    "Qual propriedade cria espaço interno entre conteúdo e borda?",
+    [
+      "padding",
+      "margin",
+      "gap externo apenas",
+      "outline"
+    ],
+    0,
+    "Padding é o espaço interno da caixa."
+  ],
+  [
+    "Qual propriedade define espaço externo em torno da caixa?",
+    [
+      "padding",
+      "margin",
+      "font-size",
+      "color"
+    ],
+    1,
+    "Margin controla o espaço externo à borda do elemento."
+  ],
+  [
+    "Qual propriedade define uma borda?",
+    [
+      "spacing",
+      "edge",
+      "border",
+      "frame-size"
+    ],
+    2,
+    "Border define características como espessura, estilo e cor da borda."
+  ],
+  [
+    "O que faz box-sizing: border-box?",
+    [
+      "Remove todas as bordas",
+      "Transforma texto em imagem",
+      "Desativa o CSS",
+      "Inclui padding e borda no tamanho definido da caixa"
+    ],
+    3,
+    "Com border-box, width e height incluem o padding e a borda."
+  ],
+  [
+    "Como vincular um CSS externo no head?",
+    [
+      "<link rel=\"stylesheet\" href=\"style.css\">",
+      "<css src=\"style.css\">",
+      "<script css=\"style.css\">",
+      "<style href=\"style.css\">"
+    ],
+    0,
+    "O elemento link relaciona o documento com a folha de estilos."
+  ],
+  [
+    "Qual sintaxe representa um comentário CSS?",
+    [
+      "<!-- comentário -->",
+      "/* comentário */",
+      "# comentário",
+      "// comentário em qualquer CSS"
+    ],
+    1,
+    "Comentários CSS são delimitados por barra-asterisco e asterisco-barra."
+  ],
+  [
+    "Qual sintaxe representa um comentário HTML?",
+    [
+      "/* texto */",
+      "# texto",
+      "<!-- texto -->",
+      "// texto"
+    ],
+    2,
+    "Comentários HTML usam os delimitadores <!-- e -->."
+  ],
+  [
+    "Qual elemento representa uma região de navegação?",
+    [
+      "<article>",
+      "<aside>",
+      "<main>",
+      "<nav>"
+    ],
+    3,
+    "Nav identifica uma seção com links de navegação."
+  ],
+  [
+    "Qual elemento representa um botão acionável?",
+    [
+      "<button>",
+      "<strong>",
+      "<span>",
+      "<meta>"
+    ],
+    0,
+    "Button fornece semântica e comportamento próprios de botão."
+  ],
+  [
+    "Para associar um label a um input, o atributo for deve corresponder a qual atributo?",
+    [
+      "class do input",
+      "id do input",
+      "name do formulário",
+      "type do input"
+    ],
+    1,
+    "A associação explícita usa for no label e o mesmo valor em id no campo."
+  ],
+  [
+    "Qual tipo de input é apropriado para um endereço de e-mail?",
+    [
+      "text-color",
+      "password",
+      "email",
+      "href"
+    ],
+    2,
+    "O tipo email oferece semântica e validação básica do formato."
+  ],
+  [
+    "O atributo required em um campo de formulário indica que:",
+    [
+      "O campo ficará invisível",
+      "O dado será criptografado",
+      "O campo aceitará apenas números",
+      "O preenchimento é obrigatório na validação do navegador"
+    ],
+    3,
+    "Required participa da validação de preenchimento do formulário."
+  ],
+  [
+    "Qual valor de display ativa Flexbox?",
+    [
+      "flex",
+      "block-grid",
+      "flexible-item",
+      "inline-table-only"
+    ],
+    0,
+    "Display flex cria um contêiner flexível para organizar os filhos."
+  ],
+  [
+    "Em um contêiner flex, qual propriedade alinha os itens no eixo principal?",
+    [
+      "align-content sempre",
+      "justify-content",
+      "font-weight",
+      "text-decoration"
+    ],
+    1,
+    "Justify-content distribui o espaço no eixo principal do Flexbox."
+  ],
+  [
+    "Qual recurso CSS aplica regras conforme características da tela?",
+    [
+      "<screen>",
+      "input type=\"screen\"",
+      "@media",
+      "font-family"
+    ],
+    2,
+    "Media queries permitem adaptar estilos a condições como a largura da tela."
+  ],
+  [
+    "Qual configuração ajuda a página a usar a largura do celular?",
+    [
+      "<meta charset=\"mobile\">",
+      "<body width=\"phone\">",
+      "<title viewport>",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+    ],
+    3,
+    "Essa meta configura a viewport para layouts responsivos em dispositivos móveis."
+  ],
+  [
+    "Qual unidade CSS é relativa ao tamanho da fonte do elemento raiz?",
+    [
+      "rem",
+      "px",
+      "cm",
+      "pt"
+    ],
+    0,
+    "Rem usa como referência o tamanho da fonte do elemento raiz."
+  ],
+  [
+    "O que faz max-width: 100% em uma imagem?",
+    [
+      "Aumenta a imagem sem limite",
+      "Limita sua largura à largura disponível do bloco de referência",
+      "Remove a imagem",
+      "Define sua resolução física"
+    ],
+    1,
+    "A regra ajuda a evitar que a imagem ultrapasse a largura disponível."
+  ],
+  [
+    "Qual pseudoclasse seleciona um elemento sob o ponteiro?",
+    [
+      ":active-only",
+      ":visited-all",
+      ":hover",
+      ":mouse"
+    ],
+    2,
+    "Hover corresponde ao estado em que o dispositivo apontador está sobre o elemento."
+  ],
+  [
+    "Em regras de mesma origem e prioridade, com igual especificidade, qual declaração prevalece?",
+    [
+      "Sempre a primeira",
+      "Sempre a mais curta",
+      "Sempre a de cor azul",
+      "A que aparece por último na ordem da cascata"
+    ],
+    3,
+    "A ordem de aparecimento desempata declarações quando os critérios anteriores são iguais."
+  ]
+]
