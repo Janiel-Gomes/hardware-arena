@@ -66,3 +66,13 @@ Referências oficiais:
 https://vercel.com/docs/functions/runtimes/node-js
 https://vercel.com/docs/redis
 https://upstash.com/docs/redis/features/restapi
+
+## Atualização 2.2 — alternativas embaralhadas por aluno
+
+Em salas NOVAS, cada participante recebe as alternativas em uma ordem sorteada individualmente. A pergunta permanece sincronizada para a turma. A posição permanece estável ao atualizar a página e nas consultas automáticas. O servidor converte a escolha para a alternativa original antes de calcular os pontos. A revelação destaca a alternativa correta na ordem de cada aluno. No professor, a ordem permanece a original, e a resposta é apresentada por texto para evitar confusão com letras diferentes nos celulares.
+
+As 24 ordens possíveis podem coincidir entre alunos; o sorteio é independente, não uma garantia de ordem exclusiva. Salas criadas antes da atualização conservam o comportamento anterior: crie uma sala nova para ativar o embaralhamento. O treino individual mantém seu comportamento anterior.
+
+Para instalar: substitua os arquivos deste ZIP no mesmo repositório, preservando as variáveis Redis na Vercel. Use Framework Other, Build npm run build e Output public. Aguarde um NOVO deploy do commit atualizado; redeploy de commit antigo não incorpora as mudanças. Não reintroduza server.mjs nem scripts/build.sh. A raiz do repositório deve conter api/, lib/, public/, scripts/, package.json e vercel.json.
+
+Cinco testes passaram, incluindo ordem individual, estabilidade ao recarregar, acertos e erros após embaralhar, destaque da resposta e cinco rodadas sem repetir questões. A atualização não foi publicada na sua conta Vercel por este ambiente; exige o envio ao repositório e um novo deploy. Os testes do banco usam um Redis simulado.
